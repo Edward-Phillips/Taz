@@ -1,16 +1,15 @@
 function fizzbuzz(input){
-  if (input % 15 === 0) {
-    return "fizzbuzz"
-  }
+  let answer= ""; 
   if (input % 3 === 0) {
-    return "fizz";
-  } else if (input === 5) {
-    return "buzz"
-  }
+    answer += "fizz";
+  } 
   if (input % 5 === 0) {
-    return "buzz"
+    answer += "buzz"
   }
-  return input}
+  if (answer.length !== 0) {
+    return answer
+  }
+  return  input}
 
 
 module.exports = fizzbuzz;
